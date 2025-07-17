@@ -1,82 +1,110 @@
-# 👋 Bem-vindo ao seu projeto Lovable (versão traduzida)
+# 📘 Sistema de Documentação
 
-## ℹ️ Informações do Projeto
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/rafaelmarzulo/sistema-de-documentacao/releases)
+![Tech](https://img.shields.io/badge/tech-react--vite--ts-blue)
+![Platform](https://img.shields.io/badge/platform-web-lightgrey)
 
-**URL do projeto no Lovable**: https://lovable.dev/projects/20cf53aa-6305-4672-b0cf-adfb9cf2e7ef
+Um sistema web moderno para edição, visualização e organização de documentos Markdown, com suporte multilíngue e estrutura modular.
 
-## 💻 Como posso editar este código?
-
-Você pode editar este projeto de diversas formas:
-
-### ✅ Usando o Lovable
-
-Acesse o [Projeto no Lovable](https://lovable.dev/projects/20cf53aa-6305-4672-b0cf-adfb9cf2e7ef) e comece a enviar comandos (prompts).
-
-As alterações feitas via Lovable serão automaticamente registradas (committed) neste repositório.
-
-### 🛠️ Usando sua IDE local
-
-Clone este repositório e envie (push) suas alterações para que elas também fiquem disponíveis no Lovable.
-
-Pré-requisito: Ter Node.js e npm instalados — [instale com nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Etapas:
-
-```sh
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <NOME_DO_SEU_PROJETO>
-npm i
-npm run dev
-```
-
-### ✏️ Editando diretamente no GitHub
-
-- Navegue até o arquivo desejado
-- Clique em “Edit” (ícone de lápis)
-- Faça suas alterações e confirme (commit)
-
-### ☁️ Usando GitHub Codespaces
-
-- Clique no botão verde “Code”
-- Vá para a aba “Codespaces”
-- Crie um novo ambiente Codespace
-- Edite diretamente e envie suas alterações
-
-## ⚙️ Tecnologias utilizadas
-
-- Vite
-- TypeScript
-- React
-- Tailwind CSS
-- shadcn-ui
-
-## 🚀 Como publicar este projeto?
-
-Acesse o [Lovable](https://lovable.dev/projects/20cf53aa-6305-4672-b0cf-adfb9cf2e7ef), clique em **Share → Publish**.
-
-## 🌐 Conectar domínio personalizado
-
-Sim! Vá até: **Project > Settings > Domains** e clique em **Connect Domain**.
-
-Leia mais: [Guia de domínio personalizado](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+![Banner do projeto](./public/banner.png)
 
 ---
 
-## ☁️ Como publicar este projeto
+## ✨ Funcionalidades
 
-### 🔹 Vercel
+- 📝 Editor Markdown com pré-visualização em tempo real
+- 🌍 Suporte a múltiplos idiomas (i18n) – Português e Inglês
+- 🧱 Componentes reutilizáveis com cabeçalho e troca de idioma
+- 📄 Visualizador de documentação
+- ☁️ Deploy simples via Vercel ou Netlify
+- 🧪 Testes automatizados com Vitest + Testing Library
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [react-i18next](https://react.i18next.com/)
+- [Vitest](https://vitest.dev/)
+
+---
+
+## 🧰 Instalação e uso local
+
+### Pré-requisitos
+- Node.js 18+
+- npm ou bun
+
+### Passos
+
+```bash
+# Clone o repositório
+git clone https://github.com/rafaelmarzulo/sistema-de-documentacao.git
+cd sistema-de-documentacao
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor local
+npm run dev
+```
+
+Acesse: [http://localhost:5173](http://localhost:5173)
+
+---
+
+## 🧪 Executar os testes
+
+```bash
+npm run test
+```
+
+---
+
+## 🌐 Publicar em produção
+
+### ✅ Vercel
+
 1. Acesse https://vercel.com/import
-2. Escolha o repositório
-3. A Vercel detectará automaticamente a configuração
-4. Clique em Deploy
+2. Conecte o repositório
+3. Detecta automaticamente: `vite`
+4. Deploy 🎉
 
-### 🔹 Netlify
+### ✅ Netlify
+
 1. Acesse https://app.netlify.com/start
-2. Selecione o repositório
-3. Configure o build command como: `npm run build`
-4. Configure o publish directory como: `dist`
-5. Clique em Deploy
+2. Conecte o repositório
+3. Comando de build: `npm run build`
+4. Pasta de publicação: `dist`
 
-Arquivos já incluídos:
-- `vercel.json`
-- `netlify.toml`
+---
+
+## 📂 Estrutura do projeto
+
+```
+src/
+├── modules/
+│   ├── ui/components/        → Componentes reutilizáveis (Header, LanguageSwitcher, etc.)
+│   └── pages/                → Páginas principais (Index, NotFound)
+├── i18n.ts                   → Configuração de idiomas
+├── App.tsx / main.tsx       → Ponto de entrada e roteamento
+public/locales/              → Arquivos de tradução (pt-br, en)
+```
+
+---
+
+## 📄 Documentação
+
+- `docs/i18n_doc.md`: Guia técnico do sistema de internacionalização
+- `docs/presentation.md`: Apresentação visual e conceitual do projeto
+
+---
+
+## 🪪 Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
