@@ -7,7 +7,7 @@
 
 Um sistema web moderno para edição, visualização e organização de documentos Markdown, com suporte multilíngue e estrutura modular.
 
-![Banner do projeto](https://github.com/rafaelmarzulo/sistema-de-documentacao/raw/main/public/banner.png)
+![Banner do projeto](https://github.com/rafaelmarzulo/sistema-de-documentacao/raw/main/banner.png)
 
 
 ---
